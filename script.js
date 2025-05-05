@@ -1,27 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    // contact us modal
-    const contactBtn = document.getElementById("contactBtn");
-    const modal = document.getElementById("contactModal");
-    const closeBtn = modal.querySelector(".close");
-
-    if (contactBtn && modal && closeBtn) {
-        contactBtn.addEventListener("click", () => {
-            modal.style.display = "block";
-        });
-
-        closeBtn.addEventListener("click", () => {
-            modal.style.display = "none";
-        });
-
-        window.addEventListener("click", (event) => {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        });
-    }
-
-
     // services list
     const services = [
         { category: 'web', icon: 'laptop-code', title: 'Custom Software Development', description: 'Tailored web solutions that scale.' },
