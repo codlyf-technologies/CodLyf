@@ -8,41 +8,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .filter-buttons {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-    }
-
-    .filter-buttons button {
-      padding: 8px 16px;
-      border: none;
-      border-radius: 20px;
-      background-color: var(--secondary-color);
-      cursor: pointer;
-      font-weight: 500;
-    }
-
-    .filter-buttons button.active,
-    .filter-buttons button:hover {
-      background-color: var(--primary-color);
-      color: white;
-    }
-  </style>
 </head>
 
 <body>
@@ -54,7 +19,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#services-list">Services</a></li>
           <li><a href="#process-section">Our Process</a></li>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="./projects.html">Projects</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
       </nav>
@@ -68,12 +33,11 @@
           <p>From ideation to deployment, we provide end-to-end software development services that drive growth and
             innovation.</p>
           <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Start Your Project</a>
-            <a href="#services-list" class="btn btn-secondary">Explore Our Services</a>
+            <a href="#services-list" class="btn btn-primary">Explore Our Services</a>
           </div>
         </div>
         <div class="hero-image">
-          <img src="./assets/hero-section.svg" alt="Custom software development services" />
+          <img loading="lazy" src="./assets/hero-section.svg" alt="Custom software development services" />
         </div>
       </section>
 
@@ -90,7 +54,7 @@
 
       <section class="hero fade-in">
         <div class="hero-image">
-          <img src="./assets/teams-section.svg" alt="Dedicated Development Teams" />
+          <img loading="lazy" src="./assets/teams-section.svg" alt="Dedicated Development Teams" />
         </div>
         <div class="hero-text">
           <h2>Scale your development capacity with our skilled, agile, and collaborative engineering teams.</h2>
