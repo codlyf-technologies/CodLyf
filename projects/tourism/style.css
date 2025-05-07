@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+header {
+    background: url('../../assets/projects/tourism/tourism-hero.png') center/cover no-repeat;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    header {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: #1d2d50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #16316d;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1d2d50;
+    margin-top: 8px;
+}
+
+.who-we-are {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.who-we-are-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.who-we-are-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.icon-box {
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    background: #f9f9f9;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonial-slide {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.testimonial-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.testimonial-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.popular-destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination-card p {
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.why-us {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.why-us-item {
+    background: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.why-us-item:hover {
+    transform: translateY(-5px);
+}
+
+.why-us-item img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #1d2d50;
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-brand h3 {
+    margin: 0 0 8px;
+    font-weight: 600;
+}
+
+.footer-brand p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-social {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .gallery,
+    .popular-destinations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-us {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .gallery,
+    .popular-destinations {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
