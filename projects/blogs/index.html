@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal & Material Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-********" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><a href="#" class="site-title">Your Material Blog</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search posts..." aria-label="Search blog posts">
+                <button type="submit" aria-label="Perform search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2>Welcome to Your Mindful Corner</h2>
+            <p>Exploring the art of living, productivity, and minimalist tech for a richer life.</p>
+            <a href="#latest-posts" class="btn-primary">Discover Latest Posts</a>
+        </div>
+    </section>
+
+    <main class="main-content container" id="latest-posts">
+        <section class="blog-post material-card">
+            <h2 class="post-title"><a href="#">The Art of Mindful Living</a></h2>
+            <div class="post-meta">
+                <div class="meta-item author">
+                    <img src="https://via.placeholder.com/30/007bff/ffffff?text=JD" alt="Jane Doe" class="author-avatar">
+                    <span class="meta-text">by Jane Doe</span>
+                </div>
+                <div class="meta-item date">
+                    <span class="meta-text">Published on <time datetime="2025-06-15">June 15, 2025</time></span>
+                </div>
+                <div class="meta-item read-time">
+                    <span class="meta-text">7 min read</span>
+                </div>
+                <a href="#" class="category-badge">Lifestyle</a>
+            </div>
+            <p class="post-excerpt">
+                In an increasingly complex world, embracing mindful living can transform your everyday. It's about
+                intentionality, presence, and finding joy in the simple moments. Explore how a conscious approach to
+                life can lead to greater peace and productivity.
+            </p>
+            <a href="#" class="read-more-btn">Read More &rarr;</a>
+        </section>
+
+        <section class="blog-post material-card">
+            <h2 class="post-title"><a href="#">Designing Your Productive Space</a></h2>
+            <div class="post-meta">
+                <div class="meta-item author">
+                    <img src="https://via.placeholder.com/30/007bff/ffffff?text=JS" alt="John Smith" class="author-avatar">
+                    <span class="meta-text">by John Smith</span>
+                </div>
+                <div class="meta-item date">
+                    <span class="meta-text">Published on <time datetime="2025-06-10">June 10, 2025</time></span>
+                </div>
+                <div class="meta-item read-time">
+                    <span class="meta-text">10 min read</span>
+                </div>
+                <a href="#" class="category-badge">Productivity</a>
+            </div>
+            <p class="post-excerpt">
+                Your environment significantly impacts your focus and creativity. Learn to design a workspace that is
+                both aesthetically pleasing and highly functional, fostering an atmosphere where ideas flourish and
+                tasks are accomplished with ease.
+            </p>
+            <a href="#" class="read-more-btn">Read More &rarr;</a>
+        </section>
+
+        <section class="blog-post material-card">
+            <h2 class="post-title"><a href="#">Minimalist Tech for Maximum Impact</a></h2>
+            <div class="post-meta">
+                <div class="meta-item author">
+                    <img src="https://via.placeholder.com/30/007bff/ffffff?text=EW" alt="Emily White" class="author-avatar">
+                    <span class="meta-text">by Emily White</span>
+                </div>
+                <div class="meta-item date">
+                    <span class="meta-text">Published on <time datetime="2025-06-05">June 05, 2025</time></span>
+                </div>
+                <div class="meta-item read-time">
+                    <span class="meta-text">6 min read</span>
+                </div>
+                <a href="#" class="category-badge">Tech & Reviews</a>
+            </div>
+            <p class="post-excerpt">
+                Discover how a streamlined tech setup can reduce distractions and amplify your digital productivity.
+                From essential gadgets to efficient software, embrace the 'less is more' philosophy in your digital
+                life.
+            </p>
+            <a href="#" class="read-more-btn">Read More &rarr;</a>
+        </section>
+
+    </main>
+
+    <button id="backToTopBtn" class="back-to-top" aria-label="Scroll back to top">Top</button>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CodLyf Technologies. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for Back to Top button
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.style.display = "flex"; // Correctly set to flex
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
